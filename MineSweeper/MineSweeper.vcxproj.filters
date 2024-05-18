@@ -18,5 +18,58 @@
     <ClCompile Include="MineSweeper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DirectionUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PositionUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Direction.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionEnum.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionUtils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionUtils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

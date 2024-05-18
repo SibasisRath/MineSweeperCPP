@@ -127,7 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="DirectionUtils.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MineSweeper.cpp" />
+    <ClCompile Include="PositionUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Direction.h" />
+    <ClInclude Include="DirectionUtils.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="PositionEnum.h" />
+    <ClInclude Include="PositionUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

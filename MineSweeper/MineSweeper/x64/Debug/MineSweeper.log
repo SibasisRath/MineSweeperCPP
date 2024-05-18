@@ -1,2 +1,11 @@
-﻿  MineSweeper.cpp
+﻿  Board.cpp
+  Box.cpp
+  Game.cpp
+  GameLoop.cpp
+  InputManager.cpp
+D:\C++Game Projects\DSA Mat2\MineSweeperCPP\MineSweeper\InputManager.cpp(46,41): warning C4101: 'e': unreferenced local variable
+D:\C++Game Projects\DSA Mat2\MineSweeperCPP\MineSweeper\InputManager.cpp(50,37): warning C4101: 'e': unreferenced local variable
+  MineSweeper.cpp
+  PositionUtils.cpp
+  Generating Code...
   MineSweeper.vcxproj -> D:\C++Game Projects\DSA Mat2\MineSweeperCPP\MineSweeper\x64\Debug\MineSweeper.exe
