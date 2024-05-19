@@ -1,0 +1,2 @@
+D:\C++Game Projects\DSA Mat2\MineSweeperCPP\MineSweeper\x64\Debug\MineSweeper.exe.lastcodeanalysissucceeded
+D:\C++Game Projects\DSA Mat2\MineSweeperCPP\MineSweeper\MineSweeper\x64\Debug\NativeCodeAnalysis.read.1.tlog

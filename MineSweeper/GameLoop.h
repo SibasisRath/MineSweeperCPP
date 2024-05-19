@@ -19,8 +19,10 @@ private:
     int totalNumberOfBoxes;
     int numberOfOpenedBoxes;
 
-    void PlantBomb();
+    void PlantBomb(std::pair<int, int> firstInput);
     void MarkBombSurroundings(Box* box);
+    void FirstIteration();
+    void InGameDisplay();
     void OpeningAllSafeBoxes(Box& box);
 
 public:

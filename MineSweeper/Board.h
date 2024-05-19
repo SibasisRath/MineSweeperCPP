@@ -6,6 +6,7 @@
 #include <vector>
 #include <random>
 #include <iostream>
+#include <algorithm>
 #include "Box.h" 
 
 class Board {
@@ -16,7 +17,7 @@ private:
 public:
     Board();
     Box& GetBox(int row, int col);
-    std::vector<Box*> GetRandomBoxes(int numBoxes);
+    std::vector<Box*> GetRandomBoxes(int numBoxes, std::pair<int,int> firstInput);
     void PrintBoard();
 };
 

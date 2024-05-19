@@ -20,7 +20,7 @@ Box& Board::GetBox(int row, int col) {
     return allBoxes[row][col];
 }
 
-std::vector<Box*> Board::GetRandomBoxes(int numBoxes) {
+std::vector<Box*> Board::GetRandomBoxes(int numBoxes, std::pair<int,int> firstInput) {
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -31,6 +31,11 @@ std::vector<Box*> Board::GetRandomBoxes(int numBoxes) {
     while (randomBoxes.size() < numBoxes) {
         int randomRow = distRow(gen);
         int randomCol = distCol(gen);
+        // Check if the random position matches firstInput
+        if (randomRow == firstInput.first && randomCol == firstInput.second) {
+            continue; // Skip this iteration
+        }
+
         Box& box = allBoxes[randomRow][randomCol];
 
         // Check if the box is already in the vector
@@ -40,6 +45,7 @@ std::vector<Box*> Board::GetRandomBoxes(int numBoxes) {
 
         if (!isDuplicate) {
             randomBoxes.push_back(&box);
+            //std::cout << box.GetPosition().first << ", " << box.GetPosition().second << "\n";
         }
     }
 

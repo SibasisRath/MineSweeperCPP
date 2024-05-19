@@ -1,0 +1,107 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/gameloop.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e1ce539055538d5bbd48a1367cca3302293431faf93ad10fe33ee7eb3c5db6b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/gameloop.h"
+          },
+          "hashes": {
+            "sha-256": "3024784bf131e98cc24e68156eb0b7a15967bb9b3ffdfdc2e8ac42686aeec6cd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/board.h"
+          },
+          "hashes": {
+            "sha-256": "27e7428623f4c0705f0d53a09cd0d34f2a14ebbca4d3872ccd45a32645949063"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/box.h"
+          },
+          "hashes": {
+            "sha-256": "edb2d11ef08e400a0aad57ddedaf31f56b5f160e9ca080abd1cebf4c8c3b8a50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/direction.h"
+          },
+          "hashes": {
+            "sha-256": "61e16333782e5e7751540dae0e1cc45c14a3d6da58b76a6f80bae60d7295c2c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/positionutils.h"
+          },
+          "hashes": {
+            "sha-256": "76fd73569b20349baebba5ba7d2dae53c27c2ee4290fed1cdfc34f74ebdf3f5a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/positionenum.h"
+          },
+          "hashes": {
+            "sha-256": "6328671b9427571dd22ce171ce15e7adb8aafe179bcbdfe82a30bc8cf9e769a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/inputmanager.h"
+          },
+          "hashes": {
+            "sha-256": "11ef72b4b2decc1c305ec4028796f3ef125f21716e8f277e36bdae0f17288dea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/constants.h"
+          },
+          "hashes": {
+            "sha-256": "50e27ef7f3820e40f6d73bef868ce223b2620ff1c7bc6832c94c5a49012c2228"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++game projects/dsa mat2/minesweepercpp/minesweeper/directionutils.h"
+          },
+          "hashes": {
+            "sha-256": "8aa76eabb103746151ed049d0eb7a22e173218dcc49cc5692c3eb5932c51656f"
+          }
+        }
+      ]
+    }
+  ]
+}

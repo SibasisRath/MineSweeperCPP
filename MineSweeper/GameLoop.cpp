@@ -4,11 +4,10 @@
 GameLoop::GameLoop() {
     totalNumberOfBoxes = ROW * COLUMN;
     numberOfOpenedBoxes = 0;
-    PlantBomb();
 }
 
-void GameLoop::PlantBomb() {
-    std::vector<Box*> bombs = board.GetRandomBoxes(NUMBER_OF_BOMBS);
+void GameLoop::PlantBomb(std::pair<int,int> firstInput) {
+    std::vector<Box*> bombs = board.GetRandomBoxes(NUMBER_OF_BOMBS, firstInput);
 
     for (Box* box : bombs) {
         box->MakeItBomb();
@@ -28,14 +27,28 @@ void GameLoop::MarkBombSurroundings(Box* box) {
     }
 }
 
+void GameLoop::InGameDisplay() {
+    std::cout << "\n\n";
+    board.PrintBoard();
+    rowAndColNum = inputManager.getValidInput(board);
+}
+
+void GameLoop::FirstIteration() {
+    InGameDisplay();
+    PlantBomb(rowAndColNum);
+    Box& box = board.GetBox(rowAndColNum.first, rowAndColNum.second);
+    box.OpenBox();
+    numberOfOpenedBoxes++;
+    OpeningAllSafeBoxes(box);
+}
+
 void GameLoop::StartMainGameLoop() {
     std::string rowInput;
     std::string colInput;
-
+    FirstIteration();
     while (true) {
-        std::cout << "\n\n";
-        board.PrintBoard();
-        rowAndColNum = inputManager.getValidInput(board);
+        InGameDisplay();
+
         // Open the box
         Box& box = board.GetBox(rowAndColNum.first, rowAndColNum.second);
         if (box.CheckBombPresence()) {
