@@ -1,30 +1,16 @@
-# Compiler settings
-CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wextra -pedantic
+# 1. Variables
+CXX = clang++
+CXXFLAGS = -std=c++17 -Wall
 
-# Source files
-SOURCES = Board.cpp Box.cpp DirectionUtils.cpp Game.cpp GameLoop.cpp InputManager.cpp MineSweeper.cpp PositionUtils.cpp
+# 2. File lists
+SRCS =  MineSweeper.cpp Game.cpp GameLoop.cpp PositionUtils.cpp InputManager.cpp DirectionUtils.cpp Box.cpp Board.cpp
+OBJS = $(SRCS:.cpp=.o)
+TARGET = MineSweeper.exe
 
-# Object files
-OBJECTS = $(SOURCES:.cpp=.o)
+# 3. Final build rule
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
-# Executable name
-EXECUTABLE = minesweeper
-
-# Default target
-all : $(EXECUTABLE)
-
-# Linking
-$(EXECUTABLE) : $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(EXECUTABLE)
-
-# Compilation
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
-
-# Clean target
-clean :
-	rm -f $(OBJECTS) $(EXECUTABLE)
-
-# Phony targets
-.PHONY: all clean
+# 4. Clean up build artifacts
+clean:
+	del /Q *.o *.exe

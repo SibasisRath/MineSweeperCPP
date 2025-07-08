@@ -5,6 +5,12 @@ void Game::StartGame() {
     DisplayBanner();
     DisplayRules();
     gameLoop.StartMainGameLoop();
+    std::cout << "Game Over!\n";
+    std::cout << "Thank you for playing!\n";
+    std::cout << "Press any key to exit...\n";  
+    //system("pause");
+    std::cin.get();
+
 }
 
 void Game::DisplayBanner() {
